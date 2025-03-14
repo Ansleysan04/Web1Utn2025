@@ -1,0 +1,20 @@
+#titulo{
+    color: blueviolet;
+    font-size: 35px;
+    background-color: black;
+}
+
+h5{
+    color: aqua;
+    font-size: 50px;
+    background-color: rgb(5, 251, 42);   
+}
+
+.textoNormal{
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
