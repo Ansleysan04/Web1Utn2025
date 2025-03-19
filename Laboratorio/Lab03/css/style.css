@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+}
+
+.btn-login {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-side {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-side img {
+    height: 100%;
+    object-fit: cover;
+}
