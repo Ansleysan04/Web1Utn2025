@@ -1,0 +1,43 @@
+body {
+    background-color: #FAF3E0;
+}
+.navbar {
+    background-color: #E65100;
+}
+.text-brown {
+    color: #5D4037;
+}
+.bg-lightbrown {
+    background-color: #8D6E63;
+}
+.bg-orange {
+    background-color: #E65100;
+}
+.bg-yelloworange {
+    background-color: #FFB74D;
+}
+.text-orange {
+    color: #FF8F00;
+}
+footer {
+    background-color: #5D4037;
+}
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.navbar-nav .nav-link:hover {
+    color: #FFEB3B !important; 
+    text-decoration: underline;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+
+   
