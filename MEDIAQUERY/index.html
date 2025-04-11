@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <button onclick="cambiarModo()">Modo</button>
+      <h2>Iniciar Sesion</h2>
+
+      <form action="">
+        <label for="usuario">Usuario</label>
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          placeholder="Tu Usuario"
+          required
+        />
+
+        <label for="contraseña">Contraseña</label>
+        <input
+          type="text"
+          id="contraseña"
+          name="contraseña"
+          placeholder="Tu contraseña"
+          required
+        />
+
+        <button type="submit" class="btnIngresar">Ingresar</button>
+      </form>
+    </div>
+    <script>
+      function cambiarModo() {
+        document.body.classList.toggle("light");
+      }
+    </script>
+  </body>
+</html>
