@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #4 - Posicionamiento en CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>UNIVERSIDAD TÉCNICA NACIONAL</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contenido-principal">
+            <h2>Contenido Principal</h2>
+            <p>El posicionamiento en CSS es una herramienta fundamental para controlar la disposición de los elementos en una página web. Nos permite sacarlos del flujo normal del documento y ubicarlos de manera precisa para crear diseños complejos y atractivos.</p>
+            <p>Esta sección principal tiene aplicado el posicionamiento <span class="code">relative</span>. Esto significa que inicialmente se comporta como un elemento estático, ocupando su lugar en el flujo del documento. Sin embargo, al aplicar propiedades como <span class="code">top</span>, <span class="code">right</span>, <span class="code">bottom</span> o <span class="code">left</span>, podemos desplazarlo relativamente a su posición original. Una de las utilidades clave del posicionamiento relativo es establecer un punto de referencia para elementos con posicionamiento <span class="code">absolute</span> dentro de él.</p>
+        
+            <div class="contenedor-imagen">
+                <img src="media/gestion-proyectos-integrales-01-qle6c0fwrufniaa0q7an2oqidsvfftvpmy68wcbqx4.jpg" alt="Imagen de prueba">
+            </div>
+        
+            <p>La imagen que ves aquí está dentro de un contenedor con posicionamiento <span class="code">relative</span>. La propia imagen tiene aplicado el posicionamiento <span class="code">absolute</span>. Esto la saca del flujo normal del documento y la posiciona relativamente al primer ancestro que tenga un posicionamiento diferente a <span class="code">static</span> (en este caso, el <span class="code">div.contenedor-imagen</span>). Al usar <span class="code">top: 0;</span> y <span class="code">left: 0;</span>, la hemos colocado en la esquina superior izquierda de su contenedor.</p>
+        
+        </section>
+
+            <section class="seccion-sticky">
+                <h2>Sección con Caja Sticky</h2>
+                <p>Esta sección demuestra el uso del posicionamiento <span class="code">sticky</span>. El elemento con la clase <span class="code">sticky-box</span> se comportará inicialmente como un elemento con posicionamiento <span class="code">relative</span> dentro de esta sección.</p>
+                <div class="sticky-box">
+                    <h3>Caja Sticky</h3>
+                    <p>¡Soy una caja con posicionamiento sticky!</p>
+                    <p>Cuando hagas scroll y mi posición alcance los 20 píxeles desde la parte superior de mi contenedor, me "pegaré" a esa posición hasta que el contenedor deje de ser visible.</p>
+                </div>
+                <p>El posicionamiento sticky es útil para crear elementos que permanecen visibles mientras el usuario navega por una sección específica de la página, como menús de navegación secundarios o indicadores de progreso.</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tecnologías Web 1
+            Ansley Sánchez - Web 1
+        </p>
+    </footer>
+</body>
+</html>
