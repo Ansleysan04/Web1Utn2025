@@ -42,7 +42,7 @@ section {
   background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(32, 32, 34, 0.1);
+  box-shadow: 0 0 10px #2020221a;
 }
 
 h2 {
