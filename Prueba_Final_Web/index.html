@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellitas Felices-Registro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Huellitas Felices</h1>
+    </header>
+
+    <main>
+      <section class="descripcion">
+        <h2>Bienvenido a huellitas felices</h2>
+        <p>
+          Aqui en huellitas felices buscamos un hogar
+          calido y amoroso para todos esos amiguitos
+          que cuidan nuestro corazón.
+        </p>
+
+        <img
+          src="media/imagenes-perros-monos.jpg"
+          alt="Banner del evento"
+          style="max-width: 100%; border-radius: 10px; margin-top: 1rem"
+        />
+      </section>
+
+      <section class="registro">
+        <h2>Formulario de Registro</h2>
+        <form id="formRegistro">
+          <label for="nombre">Nombre completo*</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico*</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefono">Teléfono*</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            pattern="\d+"
+            required
+          />
+
+          <p>¿Tiene otras mascotas?:</p>
+          <label
+            ><input type="radio" name="mascota" value="Si" />
+            Si</label
+          >
+          <label
+            ><input type="radio" name="mascota" value="No" />
+            No</label
+          >
+
+          <label for="raza">Raza*</label>
+          <select id="raza" name="raza" required>
+            <option value="">Seleccione...</option>
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label
+            ><input type="checkbox" id="terminos" required /> Acepto los
+            términos y condiciones*</label
+          >
+
+          <button type="submit">Registrarse</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Huellitas. Todos los derechos reservados. Ansley Sanchez
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

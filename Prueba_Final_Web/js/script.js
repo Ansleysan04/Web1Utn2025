@@ -4,10 +4,10 @@ document
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
-    const pais = document.getElementById("pais").value;
+    const pais = document.getElementById("raza").value;
     const terminos = document.getElementById("terminos").checked;
 
-    if (!nombre || !email || !telefono || !pais || !terminos) {
+    if (!nombre || !email || !telefono || !raza || !terminos) {
       alert("Por favor, completa todos los campos requeridos correctamente.");
       event.preventDefault();
       return;
@@ -19,5 +19,5 @@ document
       return;
     }
 
-    alert("✅ Usuario registrado con éxito");
+    alert("Usuario registrado con éxito");
   });
