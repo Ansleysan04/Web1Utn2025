@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #e67e22 !important; /* naranja */
+    font-size: 1.5rem;
+}
+
+/* Estilos de la sección hero */
+.hero-section {
+    padding: 4rem 0;
+    background-color: #fef5e7; /* crema claro */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    transition: transform 0.3s;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #f39c12; /* naranja medio */
+    border-color: #f39c12;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; /* naranja oscuro */
+    border-color: #e67e22;
+}
+
+.btn-success {
+    background-color: #ffb84d; /* naranja claro */
+    border-color: #ffb84d;
+}
+
+.btn-success:hover {
+    background-color: #ffa726; /* naranja medio */
+    border-color: #ffa726;
+}
+
+/* Estilos para la sección de características */
+.features-section h3 {
+    color: #e67e22; /* naranja */
+    font-size: 1.5rem;
+}
+
+/* Estilos para la llamada a la acción */
+.call-to-action {
+    background-color: #ffe0b2; /* crema anaranjado */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #d35400; /* naranja oscuro */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la tabla de precios */
+.table th {
+    background-color: #ffe0b2; /* crema anaranjado */
+}
+
+.table-primary th {
+    background-color: #ffcc80; /* naranja claro */
+}
+
+/* Estilos para formularios */
+form label {
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: #e67e22; /* naranja */
+    box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25);
+}
+
+/* Posicionamiento para algunos elementos */
+.relative-div {
+    position: relative;
+}
+
+.absolute-div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed-div {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.sticky-div {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Estilos para flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+    }
+    
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .table {
+        font-size: 0.85rem;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .flex-item {
+        flex: 0 0 100%;
+    }
+}
+    
